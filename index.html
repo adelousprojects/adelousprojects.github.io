@@ -55,6 +55,13 @@
     #hero {
       height: calc(100vh - var(--header-height));
     }
+    #header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
   </style>
 </head>
 
@@ -70,7 +77,6 @@
       </button>
       <nav id="menu" class="hidden w-full lg:flex lg:w-auto lg:items-center mt-4 lg:mt-0">
         <ul class="lg:flex lg:space-x-4">
-          <li><a href="#hero" class="block py-2 lg:py-0 hover:text-gray-300">Home</a></li>
           <li><a href="#works" class="block py-2 lg:py-0 hover:text-gray-300">Our Works</a></li>
           <li><a href="#team" class="block py-2 lg:py-0 hover:text-gray-300">Team</a></li>
           <li><a href="#about" class="block py-2 lg:py-0 hover:text-gray-300">About</a></li>
@@ -108,9 +114,9 @@
   <section id="works" class="py-16 bg-gray-100">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center mb-8">Our Works</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5">
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/public/cover.png" alt="Project 1" class="w-full h-48 object-cover">
+          <img src="/public/cover11.webp" alt="mytherapistbot" class="w-full h-48 object-cover">
           <div class="p-4 ab relative">
             <h3 class="text-xl font-semibold mb-2 text-center">MyTherapistBot</h3>
             <p class="text-gray-600 mb-5 text-justify">
@@ -126,7 +132,7 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/public/cover.webp" alt="Project 2" class="w-full h-48 object-cover">
+          <img src="/public/cover.webp" alt="resumetsy" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2 text-center">Resumetsy</h3>
             <p class="text-gray-600 mb-5 text-justify">
@@ -135,7 +141,7 @@
               lifting.
             </p>
             <div class="flex items-center justify-center">
-              <a href="https://mytherapistbot.com" target="_blank"
+              <a href="https://resumetsy.com" target="_blank"
                 class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
                 Visit Website
               </a>
@@ -143,7 +149,7 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/public/cover1.webp" alt="Project 3" class="w-full h-48 object-cover">
+          <img src="/public/cover1.webp" alt="narutofy" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2 text-center">Narutofy Website</h3>
             <p class="text-gray-600 mb-5 text-justify">
@@ -151,7 +157,7 @@
               4K options. The app is user-friendly and allows for easy customization of home and lock screens​.
             </p>
             <div class="flex items-center justify-center">
-              <a href="https://mytherapistbot.com" target="_blank"
+              <a href="https://narutofy.app" target="_blank"
                 class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
                 Visit Website
               </a>
@@ -159,7 +165,7 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/public/cover3.webp" alt="Project 3" class="w-full h-48 object-cover">
+          <img src="/public/cover3.webp" alt="narutofy app" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2 text-center">Narutofy Application</h3>
             <p class="text-gray-600 mb-5 text-justify">
@@ -175,7 +181,7 @@
           </div>
         </div>
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/public/cover4.webp" alt="Project 3" class="w-full h-48 object-cover">
+          <img src="/public/cover4.webp" alt="rifmap" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-xl font-semibold mb-2 text-center">Rifmap</h3>
             <p class="text-gray-600 mb-5 text-justify">
@@ -198,15 +204,15 @@
   <section id="team" class="py-16">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center mb-8">Our Team</h2>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-5">
         <div class="text-center">
-          <img src="/public/med.png" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <img src="/public/med.png" alt="Mohammed El Aissati" class="w-32 h-32 rounded-full mx-auto mb-4">
           <a href="https://www.linkedin.com/in/mohammed-el-aissati/" target="_blank"><h3 class="text-xl font-semibold">Mohammed El Aissati</h3></a>
           <p class="text-gray-600">CEO</p>
         </div>
         <div class="text-center">
-          <img src="/public/adil.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
-          <a href="https://www.linkedin.com/in/adil-lhachmi/" target="_blank"><h3 class="text-xl font-semibold">Adil Lhachme</h3></a>
+          <img src="/public/adil.jpg" alt="adil lhachmi" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <a href="https://www.linkedin.com/in/adil-lhachmi/" target="_blank"><h3 class="text-xl font-semibold">Adil Lhachmi</h3></a>
           <p class="text-gray-600">Designer</p>
         </div>
       </div>
@@ -217,13 +223,13 @@
   <section id="about" class="py-16 bg-gray-100">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold text-center mb-8">About Our Company</h2>
-      <div class="max-w-3xl mx-auto text-center">
-        <p class="text-gray-600 mb-4">
+      <div class="max-w-3xl  mx-auto text-center px-5">
+        <p class="text-gray-600 mb-4 text-2xl">
           We are a passionate team dedicated to creating innovative
           apps and websites. With years of experience and a commitment to excellence, we help businesses thrive in the
           digital world.
         </p>
-        <p class="text-gray-600">
+        <p class="text-gray-600 text-2xl">
           Our mission is to deliver high-quality, user-centric solutions that drive growth and success for our clients.
           We believe in the power of technology to transform businesses and improve lives.
         </p>
@@ -235,8 +241,8 @@
   <section id="contact" class="py-16">
     <div class="container mx-auto text-center flex flex-col justify-center h-full">
       <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
-      <p class="text-lg text-gray-700 mb-8">Feel free to get in touch with us through any of the following methods:</p>
-      <div class="flex flex-col items-center">
+      <p class="text-lg text-gray-700 mb-8 px-5">Feel free to get in touch with us through any of the following methods:</p>
+      <div class="flex flex-col items-center px-5">
         <p class="text-xl mb-2"><strong>Email:</strong> contact@adelous.com</p>
         <p class="text-xl mb-2"><strong>Phone:</strong> +44 7476481859</p>
         <p class="text-xl mb-2"><strong>Address:</strong> 71-75, Shelton Street, Covent Garden, London, WC2H 9JQ </p>
@@ -288,6 +294,19 @@
       const hero = document.getElementById('hero');
       hero.style.setProperty('height', 'calc(100vh - var(' + headerHeight + ' px))')
     }
+
+    function closeMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.add('hidden');
+    }
+
+    // Add event listeners to close menu when a link is clicked
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuLinks = document.querySelectorAll('#menu a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+    });
 
     window.addEventListener('load', setHeroHeight);
     window.addEventListener('resize', setHeroHeight);
