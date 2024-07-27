@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our App & Web Development Company</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bubble {
+      position: absolute;
+      bottom: -20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      pointer-events: none;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    @keyframes rise {
+      0% {
+        bottom: -20px;
+        opacity: 1;
+      }
+
+      100% {
+        bottom: 120%;
+        opacity: 0;
+      }
+    }
+
+    @keyframes swell {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    #hero {
+      height: calc(100vh - var(--header-height));
+    }
+  </style>
+</head>
+
+<body class="font-sans">
+  <!-- Header -->
+  <header id="header" class="bg-gray-800 text-white p-4 z-2000">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <h1 class="text-2xl font-bold">ADELOUS</h1>
+      <button class="lg:hidden block text-white focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <nav id="menu" class="hidden w-full lg:flex lg:w-auto lg:items-center mt-4 lg:mt-0">
+        <ul class="lg:flex lg:space-x-4">
+          <li><a href="#hero" class="block py-2 lg:py-0 hover:text-gray-300">Home</a></li>
+          <li><a href="#works" class="block py-2 lg:py-0 hover:text-gray-300">Our Works</a></li>
+          <li><a href="#team" class="block py-2 lg:py-0 hover:text-gray-300">Team</a></li>
+          <li><a href="#about" class="block py-2 lg:py-0 hover:text-gray-300">About</a></li>
+          <li><a href="#contact" class="block py-2 lg:py-0 hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero"
+    class="bg-blue-600 text-white min-h-screen py-20 flex items-center justify-center wave-bg text-white flex relative overflow-hidden">
+    <div class="container text-center">
+      <h2 class="text-7xl font-bold mb-4">We Create Amazing Apps & Websites</h2>
+      <p class="text-2xl mb-8">Transforming ideas into digital realities</p>
+      <a href="#contact"
+        class="bg-white text-blue-600 py-2 px-6 rounded-full text-lg font-semibold hover:bg-gray-100">Get Started</a>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full">
+      <svg class="wave" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Our Works -->
+  <section id="works" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="/public/cover.png" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4 ab relative">
+            <h3 class="text-xl font-semibold mb-2 text-center">MyTherapistBot</h3>
+            <p class="text-gray-600 mb-5 text-justify">
+              Experience personalized AI-driven mental health support with MyTherapistBot. Chat
+              with our AI therapy bot on Telegram for guidance, support and mental wellness.
+            </p>
+            <div class="flex items-center justify-center">
+              <a href="https://mytherapistbot.com" target="_blank"
+                class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="/public/cover.webp" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2 text-center">Resumetsy</h3>
+            <p class="text-gray-600 mb-5 text-justify">
+              intelligent API transforms resumes in PDF format into JSON, making it easier for
+              you to analyze candidate data seamlessly. Say goodbye to tedious manual entry—let our AI do the heavy
+              lifting.
+            </p>
+            <div class="flex items-center justify-center">
+              <a href="https://mytherapistbot.com" target="_blank"
+                class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="/public/cover1.webp" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2 text-center">Narutofy Website</h3>
+            <p class="text-gray-600 mb-5 text-justify">
+              Narutofy offers a variety of high-quality Naruto-themed wallpapers for Android devices, including live and
+              4K options. The app is user-friendly and allows for easy customization of home and lock screens​.
+            </p>
+            <div class="flex items-center justify-center">
+              <a href="https://mytherapistbot.com" target="_blank"
+                class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="/public/cover3.webp" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2 text-center">Narutofy Application</h3>
+            <p class="text-gray-600 mb-5 text-justify">
+              Narutofy offers a variety of high-quality Naruto-themed wallpapers for Android devices, including live and
+              4K options. The app is user-friendly and allows for easy customization of home and lock screens​.
+            </p>
+            <div class="flex items-center justify-center">
+              <a href="https://play.google.com/store/apps/details?id=com.konohasymbol.production" target="_blank"
+                class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members -->
+  <section id="team" class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <img src="/public/med.png" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Mohammed El Aissati</h3>
+          <p class="text-gray-600">CEO & Developer</p>
+        </div>
+        <div class="text-center">
+          <img src="/public/adil.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Adil Lhachme</h3>
+          <p class="text-gray-600">Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Info -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">About Our Company</h2>
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-gray-600 mb-4">
+          We are a passionate team of developers, designers, and digital strategists dedicated to creating innovative
+          apps and websites. With years of experience and a commitment to excellence, we help businesses thrive in the
+          digital world.
+        </p>
+        <p class="text-gray-600">
+          Our mission is to deliver high-quality, user-centric solutions that drive growth and success for our clients.
+          We believe in the power of technology to transform businesses and improve lives.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto text-center flex flex-col justify-center h-full">
+      <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+      <p class="text-lg text-gray-700 mb-8">Feel free to get in touch with us through any of the following methods:</p>
+      <div class="flex flex-col items-center">
+        <p class="text-xl mb-2"><strong>Email:</strong> contact@company.com</p>
+        <p class="text-xl mb-2"><strong>Phone:</strong> +123 456 7890</p>
+        <p class="text-xl mb-2"><strong>Address:</strong> 123 Main Street, City, Country</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 DevCo. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+        <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    }
+    function createBubble() {
+      const hero = document.getElementById('hero');
+      const bubble = document.createElement('div');
+      bubble.classList.add('bubble');
+
+      const size = Math.random() * 60 + 10;
+      const left = Math.random() * 100;
+      const duration = Math.random() * 4 + 2;
+
+      bubble.style.width = `${size}px`;
+      bubble.style.height = `${size}px`;
+      bubble.style.left = `${left}%`;
+      bubble.style.animation = `rise ${duration}s linear, swell ${duration * 0.25}s ease-in-out infinite`;
+
+      hero.appendChild(bubble);
+
+      setTimeout(() => {
+        bubble.remove();
+      }, duration * 1000);
+    }
+
+    setInterval(createBubble, 300);
+    function setHeroHeight() {
+      const header = document.getElementById('header');
+      const headerHeight = header.offsetHeight;
+      document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+      const hero = document.getElementById('hero');
+      hero.style.setProperty('height', 'calc(100vh - var(' + headerHeight + ' px))')
+    }
+
+    window.addEventListener('load', setHeroHeight);
+    window.addEventListener('resize', setHeroHeight);
+  </script>
+</body>
+
+</html>
